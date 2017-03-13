@@ -1,0 +1,31 @@
+# Site settings
+title: Hover
+email: team@hoverpictures.com
+
+page_about: about
+page_work: work
+page_directors: directors
+page_news: news
+legalDate: "2017"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hoverpictures.com" # the base hostname & protocol for your site
+
+#social media links
+
+facebook_username: HoverPictures
+twitter_username: hover_pictures
+vimeo_username: hoverpictures
+instagram_username: hover_pictures
+tumblr_username: hovernews
+
+#contact info
+
+address_1: "83 Canal Street #203 New York, NY <br>"
+address_2: "345 Capricorn Street, Oakland, CA"
+address_3: ""
+
+phone_number: "917-727-9036"
+
+# Build settings
+markdown: kramdown

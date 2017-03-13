@@ -1,0 +1,59 @@
+#nondirectors
+
+- name: "Alessandra Lacorrazza"
+  title: "Editor"
+  email: "alessandra@hover.nyc"
+  slug: "alessandra-lacorrazza"
+  twitter: ""
+
+- name: "Tonio Ramsay"
+  title: "Assistant Editor"
+  email: ""
+  slug: "tonio-ramsay"
+  twitter: ""
+
+- name: "Evander Batson"
+  title: "Digital Design"
+  email: ""
+  slug: "evander-batson"
+  twitter: ""
+
+- name: "Allie Straim"
+  title: "Post Production"
+  slug: "allie-straim"
+
+- name: "Derek Saffe"
+  title: "Associate Producer"
+  slug: "derek-saffe"
+
+- name: "Ethan Goldwater"
+  title: "Director, Founder"
+  director: "Director, Founder"
+  slug: "ethan-goldwater"
+
+- name: "Max Basch"
+  title: "Director of Photography"
+  slug: "max-basch"
+
+- name: "Zach Sky"
+  title: "Director"
+  slug: "zach-sky"
+
+
+# hover graveyard
+
+# - name: "Lucie Beatrix"
+#   title: "Associate Producer"
+#   email: "lucie@hover.nyc"
+#   twitter: "LucieB_1"
+
+# - name: "Alexis Berkowitz"
+#   title: "Legal"
+#   email: ""
+#   slug: "alexis-berkowitz"
+#   twitter: ""
+
+# - name: "Lucas McGowen"
+#   title: "Director, Cinematographer"
+#   director: "Director"
+#   slug: "lucas-mcgowan"

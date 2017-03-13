@@ -1,0 +1,209 @@
+/**
+ * Reset some basic elements
+ */
+
+html, body {
+    position: relative;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: $font-size-r;
+}
+
+hr {
+    margin: 0;
+    border-bottom: 0.5px $shadow-color solid;
+    position: relative;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $font-size-s;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+/**
+ * Links
+ */
+a {
+    color: $shadow-color;
+    text-decoration: none;
+
+    &:visited {
+        color: $shadow-color;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    font-size: 20pt;
+    letter-spacing: -1px;
+    > :last-child {
+        margin-bottom: 0;
+    }
+    cite {
+    font-size: $font-size-m;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    }
+    cite:before {
+    content: "\2014 \2009";
+    }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    margin: 0 auto;
+    padding-right: 2%;
+    padding-left: 2%;
+    @extend %clearfix;
+}
+
+.text-column {
+    margin: 0 auto;
+    max-width: $text-block-width;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+/**
+ * Forms
+ */
+
+ input, textarea {
+    overflow: none;
+    font-size: $font-size-m;
+    font-family: $base-font-family;
+    padding: 1em 0;
+    border: none;
+    resize: none;
+    outline:none;
+ }
+
+input {
+    background: transparent;
+    color: $highlight-color;
+    border-bottom: 3px $highlight-color solid;
+}
+
+ /*animations*/
+
+ @keyframes openmenu {
+    from { opacity: 0;
+           padding-top: 5%;
+        }
+    to   { opacity: 0.95;
+           padding-top: 7%; }
+}
+
+ @keyframes fadeIn {
+    0% { opacity: 0;}
+    20% { opacity: 0;}
+    100% { opacity: 1.0;}
+}

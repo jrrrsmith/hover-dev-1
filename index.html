@@ -1,0 +1,75 @@
+---
+layout: splash
+title: Home
+brand: "Hover"
+
+kicker: "Hover is a production and entertainment company inspired by human dimension, storytelling and technology. We make independent shorts and feature films, commercials and VR experiences for major brands and organizations."
+
+index_selected: page-selected
+
+---
+
+<div class="splash-video-container">
+    <video id="people-player" class="splash-video" mute autoplay loop>
+    </video>
+</div>
+
+<div class="splash">
+    <div class="wordmark">
+      <a href="#work-overview">
+      <img src="{{ site.baseurl }}/assets/images/hover-white.png">
+      </a>
+    </div>
+</div>
+
+<!-- Project Selectors 6  -->
+
+<section id="kicker">
+        <h2>
+      {{ page.kicker }}
+        </h2>
+</section>
+
+<section id="work-overview" class="wrapper">
+
+  <h1 class="section-title">
+  Featured Work
+  </h1>
+  
+  {% include featured_projects.html %}
+  
+  <div class="overview-button-container">
+    <a href="{{ site.baseurl }}/work">
+      <div class="overview-button">
+        See All
+      </div>
+    </a>
+  </div>
+
+</section>
+
+<section id="logo-span" class="wrapper">
+      {% for client in site.data.clients limit:12 %}
+      <span class="client-logo">
+        <a href=" {{ client.website_url }} " target="blank">
+          <img src="{{site.baseurl}}/{{ client.logo_url }}" width="15%">
+        <a/>
+      </span>
+      {% endfor %}
+</section>
+
+
+<!-- ******************** -->
+
+<div class="temp-spacer" height="500px">
+</div>
+
+<!-- ******************** -->
+
+<!-- Inquiry -->
+
+{% include inquiry.html %}
+
+<hr class="mobile-hidden">
+
+ <!-- ******************** -->

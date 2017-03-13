@@ -1,0 +1,29 @@
+<div class="project-selector {{ project.category }}">
+
+  <a href="{{ site.baseurl }}/projects/{{ project.slug }}.html">
+
+    <div class="project-selector-thumbnail">
+      {% if project.videoThumbnail %}
+        <div class="project-selector-video">
+          <video id="{{ project.slug }}-thumb" class="video-thumbnail mobile-hidden" width="100%" height="auto" loop>
+            <source src="{{site.baseurl}}/assets/work/{{ project.slug }}/{{ project.slug }}-video.mp4" type="video/mp4">
+          </video>
+          <img class="project-selector-image desktop-hidden" src="{{site.baseurl}}/assets/work/{{ project.slug }}/{{ project.slug }}-thumbnail.jpg">
+        </div>
+        {% else %}
+        <img class="project-selector-image" src="{{site.baseurl}}/assets/work/{{ project.slug }}/{{ project.slug }}-thumbnail.jpg">
+        {% endif %}
+    </div>
+
+    <h1>
+      {{ project.title }}
+    </h1>
+
+    <h3>
+      {{ project.director }}
+    </h3>
+
+  </a>
+
+</div>
+

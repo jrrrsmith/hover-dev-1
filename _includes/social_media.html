@@ -1,0 +1,54 @@
+<div class="social-media-list">
+  <ul>
+    {% if site.twitter_username %}
+    <li>
+      <a href="https://twitter.com/{{ site.twitter_username }}" target="blank">
+        <span class="icon  icon--twitter">
+          <i class="fa fa-twitter"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+    <li>
+      <a href="http://facebook.com/{{ site.facebook_username }}" target="blank">
+        <span class="icon  icon--facebook">
+          <i class="fa fa-facebook"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.vimeo_username %}
+    <li>
+      <a href="http://vimeo.com/{{ site.vimeo_username }}" target="blank">
+        <span class="icon  icon--vimeo">
+          <i class="fa fa-vimeo"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.instagram_username %}
+    <li>
+      <a href="http://instagram.com/{{ site.instagram_username }}" target="blank">
+        <span class="icon  icon--vimeo">
+          <i class="fa fa-instagram"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.tumblr_username %}
+    <li>
+      <a href="http://{{ site.tumblr_username }}.tumblr.com/" target="blank">
+        <span class="icon  icon--vimeo">
+          <i class="fa fa-tumblr"></i>
+        </span>
+      </a>
+    </li>
+    {% endif %}
+
+  </ul>
+</div>

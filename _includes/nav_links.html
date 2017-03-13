@@ -1,0 +1,25 @@
+<nav id="nav-links">
+
+  <a href="{{site.baseurl}}/" class="{{ page.index_selected }}">
+        <div class="brand">
+          {% if page.dark_nav == "dark-nav" %}
+          <img class="emblem" src="{{ site.baseurl }}/assets/images/emblem-black.png">
+          {% else %}
+           <img class="emblem" src="{{ site.baseurl }}/assets/images/emblem-white.png">
+          {% endif %}
+        </div>
+  </a>
+
+    <a href="{{site.baseurl}}/{{ site.page_about }}" class="{{ page.about_selected }} {{ page.dark_nav }}">
+      {{ site.page_about }}
+    </a>
+
+    <a href="{{site.baseurl}}/{{ site.page_work }}" class="{{ page.work_selected }} {{ page.dark_nav }}">
+      {{ site.page_work }}
+    </a>
+
+<!--     <a href="http://hovernews.tumblr.com" class="{{ page.news_selected }} {{ page.dark_nav }}">
+      {{ site.page_news }}
+    </a> -->
+
+</nav>

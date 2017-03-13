@@ -1,0 +1,32 @@
+<div class="work-selector">
+
+	<ul>
+
+		{% for categorie in site.data.categories %}
+		<a href="{{ site.baseurl }}/work-{{ categorie.slug }}/">
+			<li id="{{ page.slug }}-selector">
+				{% if categorie.slug == page.slug %}
+					<span class="selected">
+				{% endif %}
+					{{ categorie.name }}
+				{% if categorie.slug == page.slug %}
+					</span>
+				{% endif %}
+			</li>
+		</a>
+		{% endfor %}
+<!-- 		{% if page.kicker %}
+		<p>{{ page.kicker }}</p>
+		{% endif %} -->
+	</ul>
+</div>
+
+<section class="work wrapper">
+
+{% for project in site.data.projects %}
+	{% if project.category == page.slug %}
+		{% include project_selector.html %}
+	{% endif %}
+{% endfor %}
+
+</section>

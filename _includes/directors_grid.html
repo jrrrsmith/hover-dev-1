@@ -1,0 +1,28 @@
+<div id="directors-overview-grid">
+
+    {% for director in site.data.directors limit:2 %}
+      <a href="{{ site.baseurl }}/directors#{{ director.slug }}">
+        <div id="directors-overview-grid-1" class="directors-grid">
+          <img src="{{site.baseurl}}/assets/directors/{{ director.slug }}-thumbnail.jpg">
+          <h1>{{ director.name }} </h1>
+        </div>
+      </a>
+      <div class="directors-grid-gutter">
+      </div>
+    {% endfor %}
+
+    <div class="directors-grid-break">
+    </div>
+
+    {% for director in site.data.directors offset:2 limit:2 %}
+      <a href="{{ site.baseurl }}/directors#{{ director.slug }}">
+        <div id="directors-overview-grid-1" class="directors-grid">
+          <img src="{{site.baseurl}}/assets/directors/{{ director.slug }}-thumbnail.jpg">
+          <h1>{{ director.name }} </h1>
+        </div>
+      </a>
+      <div class="directors-grid-gutter">
+      </div>
+    {% endfor %}
+
+</div>

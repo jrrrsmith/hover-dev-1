@@ -1,0 +1,43 @@
+<div class="project-info-series">
+	<h1>
+		{{ project.title }}
+	</h1>
+	<h3>
+		Directed by {{ project.director }},
+		{{ project.date }}, 
+		{{ project.medium }}
+	</h3>
+	<h3>
+		{{ project.client }}
+	</h3>
+
+	{% if project.vimeo1 %}
+	<div class="project-hero-video-container">
+		<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/{{ project.vimeo1 }}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+	</div>
+	{% endif %}
+
+	<h2> {{ project.work_1_title }} </h2>
+
+	<br>
+	
+	{% if project.vimeo2 %}
+	<div class="project-hero-video-container">
+		<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/{{ project.vimeo2 }}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+	</div>
+	{% endif %}
+
+	<h2> {{ project.work_2_title }} </h2>
+
+	<br>
+	
+	{% if project.vimeo3 %}
+	<div class="project-hero-video-container">
+		<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/{{ project.vimeo3 }}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+	</div>
+	{% endif %}
+
+	<h2> {{ project.work_3_title }} </h2>
+
+	<br><br>
+</div>

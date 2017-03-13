@@ -1,0 +1,65 @@
+<div id="team-grid">
+
+{% for team in site.data.team limit:3 %}
+  {% if team.director %}
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/directors/{{ team.slug }}-thumbnail.jpg">
+      <h1> {{ team.name }} </h1>
+      <p> {{ team.title}} </p>
+    </div>
+  {% else %}
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/team/{{ team.slug }}-thumbnail.jpg">
+      <h1> {{ team.name }} </h1>
+      <p> {{ team.title }} </p>
+    </div>
+  {% endif %}
+  <div class="team-grid-gutter">
+  </div>
+{% endfor %}
+
+<div class="team-grid-break">
+</div>
+
+{% for team in site.data.team offset:3 limit:3 %}
+  {% if team.director %}
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/directors/{{ team.slug }}-thumbnail.jpg">
+      <h1>{{ team.name }} </h1>
+      <p>{{ team.director }} </p>
+    </div>
+  {% else %}
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/team/{{ team.slug }}-thumbnail.jpg">
+      <h1>{{ team.name }} </h1>
+      <p>{{ team.title }} </p>
+    </div>
+  {% endif %}
+  <div class="team-grid-gutter">
+  </div>
+{% endfor %}
+
+<div class="team-grid-break">
+</div>
+
+{% for team in site.data.team offset:6 limit:3 %}
+  {% if team.director %}
+  <a href="{{ site.baseurl }}/directors#{{ team.slug }}">
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/directors/{{ team.slug }}-thumbnail.jpg">
+      <h1>{{ team.name }} </h1>
+      <p>{{ team.director }} </p>
+    </div>
+  </a>
+  {% else %}
+    <div id="team-overview-grid-1" class="team-grid">
+      <img src="{{site.baseurl}}/assets/team/{{ team.slug }}-thumbnail.jpg">
+      <h1>{{ team.name }} </h1>
+      <p>{{ team.title }} </p>
+    </div>
+  {% endif %}
+  <div class="team-grid-gutter">
+  </div>
+{% endfor %}
+
+</div>

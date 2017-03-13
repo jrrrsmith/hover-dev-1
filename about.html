@@ -1,0 +1,137 @@
+---
+layout: splash
+title: About
+permalink: /about/
+return: ""
+
+about_selected: page-selected
+
+colophon: "Hover Pictures was founded in 2013 by Ethan Goldwater, a NY-based filmmaker whose work is built on his prior experience as a journalist and educator."
+
+colophon2: "We believe in using the camera as a witness to create explorative documentary and narrative work that invites viewers into a dynamic, reflexive and transformative relationship with the lens and screen."
+
+colophon3: "We are dedicated to pushing the boundaries of storytelling and supporting directors to bring new work to life."
+
+colophon4: "We have produced work for clients such as Sunflower Entertainment, Shell Rotella, Mediacom, Sargento Cheese, NYU, Drug Policy Alliance, BRIC, Vice, Lightbox, and Pitchfork Media."
+---
+
+<div class="splash-video-container about-image">
+    <video id="landscape-player" class="splash-video" mute autoplay loop>
+      
+    </video>
+</div>
+
+<!-- About splash  -->
+
+<div class="splash">
+
+  <div class="about-title">
+
+    <div class="brand">
+      <a href="#brand-narrative">
+        <img class="emblem" src="{{ site.baseurl }}/assets/images/emblem-white.png">
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- *************  -->
+
+<!-- Brand Narrative  -->
+
+<section id="brand-narrative" class="page-narrative wrapper">
+
+  <div class="text-column">
+    <h2>
+     {{ page.colophon }}
+    </h2>
+    <h2>
+     {{ page.colophon2 }}
+    </h2>
+    <h2>
+     {{ page.colophon3 }}
+    </h2>
+    <h2>
+     {{ page.colophon4 }}
+    </h2>
+    <img id="narrative-image-1" src="{{ site.baseurl }}/assets/photography/about-0.jpg" class="full-image">
+
+  </div>
+
+  <div id="services" class="wrapper">
+
+    <h1 class="section-title">
+      Services
+    </h1>
+
+    {% for service in site.data.services %}
+      <div class="service-column">
+        <h2>
+          {{ service.type }}
+        </h2>
+        <ul>
+          <li>{{ service.a }}</li>
+          <li>{{ service.b }}</li>
+          <li>{{ service.c }}</li>
+          <li>{{ service.d }}</li>
+          <li>{{ service.e }}</li>
+          <li>{{ service.f }}</li>
+        </ul>
+      </div>
+    {% endfor %}
+
+  </div>
+
+
+</section>
+
+
+<!-- Clients -->
+
+<section id="client-list" class="">
+
+  <h1 class="section-title">
+    Clients
+  </h1>
+
+    <div class="client-column">
+      <ul class="client-column-3">
+        {% for client in site.data.clients limit:4 %}
+        <li class="client-logo">
+          <a href=" {{ client.website_url }} " target="blank">
+            <img src="{{site.baseurl}}/{{ client.logo_url }}">
+          <a/>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="client-column-4">
+        {% for client in site.data.clients limit:4 offset:4 %}
+        <li class="client-logo">
+          <a href=" {{ client.website_url }} " target="blank">
+            <img src="{{site.baseurl}}/{{ client.logo_url }}">
+          <a/>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="client-column-3">
+        {% for client in site.data.clients limit:4 offset:8 %}
+        <li class="client-logo">
+          <a href=" {{ client.website_url }} " target="blank">
+            <img src="{{site.baseurl}}/{{ client.logo_url }}">
+          <a/>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+    </div>
+
+</section>
+
+<!-- Inquiry -->
+
+{% include inquiry.html %}

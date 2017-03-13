@@ -1,0 +1,70 @@
+<footer>
+
+  <div class="footer-container">
+
+  <nav id="nav-links">
+    <a href="{{site.baseurl}}/" class="{{ page.index_selected }}">
+          <div class="brand">
+             <img class="emblem" src="{{ site.baseurl }}/assets/images/emblem-white.png">
+          </div>
+    </a>
+
+      <a href="{{site.baseurl}}/{{ site.page_about }}" class="{{ page.about_selected }}">
+        {{ site.page_about }}
+      </a>
+
+      <a href="{{site.baseurl}}/{{ site.page_work }}" class="{{ page.work_selected }}">
+        {{ site.page_work }}
+      </a>
+  </nav>
+
+    <div class="footer-left">
+      <div class="mailing-list">
+        <a href="//hovercrafts.us3.list-manage.com/subscribe/post?u=fc8289deee3c1d33821ff0051&amp;id=41c2166cd9" target="blank">
+          <h1>Sign up for our newsletter</h1>
+        </a>
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mailchimp" class="mobile-hidden">
+        <form action="//hovercrafts.us3.list-manage.com/subscribe/post?u=fc8289deee3c1d33821ff0051&amp;id=41c2166cd9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          
+        <span class="mc-field-group">
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </span>
+          <span id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </span>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_fc8289deee3c1d33821ff0051_41c2166cd9" tabindex="-1" value=""></div>
+            <span class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="button"></div>
+            </span>
+        </form>
+        </div>
+        <!--End mc_embed_signup-->
+
+      </div>
+    </div>
+
+    <div class="footer-right">
+    {% include social_media.html %}
+    </div>
+
+    <div class="address"> 
+      <a href="https://www.google.com/maps/place/83+Canal+St,+New+York,+NY+10002/@40.715438,-73.9952746,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a2843c19813:0x7340215b2c822b9a" target="blank">
+      {{ site.address_1 }}
+      {{ site.address_2 }} <br>
+      {{ site.address_3 }} <br>
+      </a>
+      <i class="fa fa-phone"></i> {{ site.phone_number }}<br>
+      <i class="fa fa-envelope-o"></i> {{ site.email }}
+    </div>
+
+    <div class="legal">
+      © Hover Inc., {{ site.legalDate }} All Rights Reserved.
+    </div>
+
+
+  </div>
+
+</footer>

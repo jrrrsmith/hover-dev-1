@@ -1,0 +1,12 @@
+# - name: "Documentary"
+#   slug: "documentary"
+
+
+- name: "Commercial"
+  slug: "commercial"
+
+- name: "Original"
+  slug: "original"
+
+- name: "VR/360"
+  slug: "vr"

@@ -1,0 +1,55 @@
+- ID: "1"
+  brand: "Rockefeller Brothers Fund"
+  logo_url: "assets/clients/ROCKEFELLER-logo.png"
+  website_url: "http://www.rbf.org/"
+
+- ID: "2"
+  brand: "MEDIACOM"
+  logo_url: "assets/clients/MEDIACOM-logo.png"
+  website_url: "http://mediacom.com"
+
+- ID: "3"
+  brand: "Pitchfork"
+  logo_url: "assets/clients/PITCHFORK-logo.png"
+  website_url: "http://pitchfork.com/"
+
+- ID: "4"
+  brand: "Picinguaba"
+  logo_url: "assets/clients/PICINGUABA-logo.png"
+  website_url: "http://www.picinguaba.com/"
+
+- ID: "5"
+  brand: "Hester Nights"
+  logo_url: "assets/clients/HESTERNIGHTS-logo.png"
+  website_url: "http://www.hesterstreetfair.com/"
+
+- ID: "6"
+  brand: "BRIC"
+  logo_url: "assets/clients/BRIC-logo.png"
+
+- ID: "7"
+  brand: "Achievement First"
+  logo_url: "assets/clients/ACHIEVEMENTFIRST-logo.png"
+  website_url: "http://www.achievementfirst.org/"
+
+- ID: "8"
+  brand: "Billboard"
+  logo_url: "assets/clients/BILLBOARD-logo.png"
+  website_url: "http://www.billboard.com/"
+
+- ID: "9"
+  brand: "DPA"
+  logo_url: "assets/clients/DPA-logo.png"
+  website_url: "http://www.drugpolicy.org/"
+
+- ID: "10"
+  brand: "Shell Rotella"
+  logo_url: "assets/clients/ROTELLA-logo.png"
+
+- ID: "11"
+  brand: "NYU"
+  logo_url: "assets/clients/NYU-logo.png"
+
+- ID: "12"
+  brand: "Sargento"
+  logo_url: "assets/clients/SARGENTO-logo.png"

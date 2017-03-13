@@ -1,0 +1,15 @@
+---
+layout: project
+return: "work/"
+---
+
+{% for project in site.data.projects %}
+	{% if project.slug == "sense-writing" %}
+
+		{% include project_info.html %}
+
+	{% endif %}
+{% endfor %}
+
+
+<hr>

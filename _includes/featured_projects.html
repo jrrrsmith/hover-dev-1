@@ -1,0 +1,27 @@
+<div id="work-overview-card-A" class="work-overview-card">
+
+  {% for project in site.data.projects %}
+    {% if project.slug == site.data.featured.A1 %}
+      {% include project_selector.html %}
+    {% endif %}
+  {% endfor %}
+
+  {% for project in site.data.projects %}
+    {% if project.slug == site.data.featured.A2 %}
+      {% include project_selector.html %}
+    {% endif %}
+  {% endfor %}
+
+  {% for project in site.data.projects %}
+    {% if project.slug == site.data.featured.A3 %}
+      {% include project_selector.html %}
+    {% endif %}
+  {% endfor %}
+
+  {% for project in site.data.projects %}
+    {% if project.slug == site.data.featured.A4 %}
+      {% include project_selector.html %}
+    {% endif %}
+  {% endfor %}
+
+</div>

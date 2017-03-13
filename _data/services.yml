@@ -1,0 +1,16 @@
+- type: Narrative
+  a: "Photography"
+  b: "Story Architecture"
+  c: "Editorials"
+
+- type: Film and Video
+  a: "Production"
+  b: "Post-Production"
+  c: "Music Composition"
+  d: "Color Correction"
+  e: "Audio Mixing"
+
+- type: Design
+  a: "Art Direction"
+  b: "Interactive Design"
+  c: "Graphic Design"

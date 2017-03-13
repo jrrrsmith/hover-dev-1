@@ -1,0 +1,30 @@
+---
+layout: third
+return: news/
+---
+
+<section id="news" class="wrapper">
+
+  <header class="post-header">
+  <img src="{{site.baseurl}}/assets/posts/{{ page.slug }}.jpg" class="news-image">
+    <h1 class="post-title">
+    	{{ page.title }}
+    </h1>
+    <p class="post-meta">
+    	{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+  
+  <div class="overview-button-container">
+    <a href="{{ site.baseurl }}/{{ site.page_news }}">
+      <div class="overview-button">
+        More News
+      </div>
+    </a>
+  </div>
+
+</section>

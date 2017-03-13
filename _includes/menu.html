@@ -1,0 +1,65 @@
+<div id="menu" class="hidden">
+
+  <a href="{{site.baseurl}}/" class="menu-brand">
+    <img src="{{ site.baseurl }}/assets/images/hover-logo.png" id="header-logo">
+  </a>
+
+  <div class="menu-left">
+
+    <h1>
+      <a href="{{ site.baseurl }}/{{ site.page_about }}">
+        {{ site.page_about }}
+      </a>
+    </h1>
+
+      <ul class="sub-menu-container">
+        <li>
+          <a href="{{ site.baseurl }}/{{ site.page_about }}#brand-narrative" class="sub-menu">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/{{ site.page_about }}#services" class="sub-menu">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/{{ site.page_about }}#client-list" class="sub-menu">
+            Clients
+          </a>
+        </li>
+      </ul>
+
+    <h1>
+      <a href="{{site.baseurl}}/{{ site.page_work }}">
+        {{ site.page_work }}
+      </a>
+    </h1>
+
+    <ul class="sub-menu-container">
+      <li><a href="{{ site.baseurl }}/work">All</a></li>
+      {% for categorie in site.data.categories %}
+      <li><a href="{{ site.baseurl }}/work-{{ categorie.slug }}">{{ categorie.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+  <div class="menu-right">
+    <h2> {{ site.address_1 }} {{ site.address_2 }} </h2>
+    <h2> {{ site.address_3 }} </h2>
+    <h2> <i class="fa fa-phone"></i> {{ site.phone_number }} </h2>
+    <h2> <i class="fa fa-envelope-o"></i>
+      <a href="mailto:{{ site.email }}" target="blank">
+        {{ site.email }}
+      </a> 
+    </h2>
+    <h2> {% include social_media.html %} </h2>
+<!--     <h2> 
+      <a href="{{ site.baseurl }}/assets/documents/HoverCapabilitiesDeck-100715-5.pdf" target="blank">
+        <i class="fa fa-file-text-o"></i> Press Kit
+      </a> 
+    </h2> -->
+  </div>  
+
+</div>

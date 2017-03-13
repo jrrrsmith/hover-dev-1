@@ -1,0 +1,18 @@
+---
+return: "work/"
+layout: project
+---
+
+<section id="project-series" class="wrapper">
+
+{% for project in site.data.projects %}
+	{% if project.slug == "billboard-music-conference" %}
+
+		{% include project_info_series.html %}
+
+	{% endif %}
+{% endfor %}
+
+</section>
+
+<hr>
